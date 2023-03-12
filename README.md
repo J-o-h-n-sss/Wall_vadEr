@@ -1,2 +1,7 @@
-# Wall_vadEr
-friendly cleaning robot
+# Wall_Vader
+Speed : N/A
+Height : N/A
+Specs : N/A
+Battery-life : N/A
+
+
