@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="JNR">
-    <title>Document</title>
+    <title>M1.0 Control System</title>
 </head>
 <body>
+    <p>
+        <h1 style="font-family:verdanna;text-align:center;">
+            Wall Vader Control System
+        </h1>
+
+    </p>
     
 </body>
 </html>
