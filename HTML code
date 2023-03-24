@@ -6,14 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="JNR">
     <title>M1.0 Control System</title>
+
+    <style>
+        h1 {
+            font-family: sans-serif;
+            color: #333;
+
+        }
+        body{
+            margin: 50px;
+        }
+        #container {
+            margin: 0px auto;
+            width: 500px;
+            height: 375px;
+            border: 10px #333 solid; 
+
+        }
+        #videoElement {
+            width: 500px;
+            height: 375px;
+            background-color: #666;
+
+
+        }
+       
+    </style>
+
 </head>
 <body>
-    <p>
-        <h1 style="font-family:verdanna;text-align:center;">
-            Wall Vader Control System
-        </h1>
+    <h1>Wall Vader Control System</h1>
+    <div id="container"> 
+        <video autoplay="true" id="videoElement">
 
-    </p>
+
+        </video>
+
+    </div>
+
+    <script>
+        let video = document.querySelector("#videoElement");
+        if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: false})
+             .then(function(stream){
+                video.srcObject = stream;
+             })
+             .catch (function (error){
+                console.log("Something went wrong!");
+             })
+
+
+        } else{
+            console.log("getUserMedia not supported!");
+        }
+    
+    </script>
+
+    
     
 </body>
 </html>
