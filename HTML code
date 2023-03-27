@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,6 +31,9 @@
 
 
         }
+        #div1 {
+            text-align:center;
+        }
        
     </style>
 
@@ -64,8 +65,17 @@
         }
     
     </script>
+    
+
+       <div1>
+        <button onclick="">Move forward</button>
+       </div1>
+      
+
+    
 
     
     
 </body>
 </html>
+
