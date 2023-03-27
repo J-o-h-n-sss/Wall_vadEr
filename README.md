@@ -5,7 +5,7 @@
 ## - 1st POV camera
 ### Speed ⚡: N/A
 ### Height : N/A
-### Battery-life 🔋: N/A
+### Battery capacity 🔋: 7.8 volts
 ### 
 
 
