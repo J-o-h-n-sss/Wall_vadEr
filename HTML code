@@ -16,7 +16,7 @@
         }
         body{
             margin: 50px;
-            background-color:#666;
+            background-color:#666; 
         }
         #container {
             margin: 50px auto;
@@ -33,7 +33,7 @@
         a{
             background-color:red;
             border: none;
-            position: absolute;
+            /* position: absolute; */
             transform: translate(-50%, -50%);
             /* top: 50%; */
             left: 50%;
@@ -44,34 +44,28 @@
             color: red; 
             border-radius: 6px; 
         }
-        a:hover{
+        #forward {
+            background-color: red;
+            position: absolute;
+
+        }
+        #forward:hover{
             background-color:black;
+        }
+        #reverse{
+            background-color: red;
+            transform: translate(-50%,-50%);
+            /* top: 75%; */
+            position: absolute;
         }
        
         </style>
         
-        <script>
-            let video = document.querySelector("#videoElement");
-            if (navigator.mediaDevices.getUserMedia) {
-                navigator.mediaDevices.getUserMedia({ video:false})
-                 .then(function(stream){
-                    video.srcObject = stream;
-                 })
-                 .catch (function (error){
-                    console.log("Something went wrong!");
-                 })
-        
-        
-            } else{
-                console.log("getUserMedia not supported!");
-            }
-        
-        </script>
-
+  
 </head>
 
 <body>
-    <h1 >Wall Vader Control System</h1>
+    <h1>Wall Vader Control System</h1>
 <div>
     <div id="container"> 
         <video autoplay="true" id="videoElement">
@@ -81,10 +75,14 @@
 
     </div>
 
-    <a href='/Drive'> Forward (w) </a>
-    <!-- <a href='/Reverse'> Backward (s) </a> -->
+    <div>
+    <a id="forward" href='/Drive'> Forward (w) </a>
+    </div>
+    <div>
+    <a id="reverse" href='/Reverse'> Backward (s) </a>
+    </div>
 
-    </div>  
+</div>  
 
 
     
@@ -92,5 +90,26 @@
     
     
 </body>
+
+<script>
+    let video = document.getElementById("videoElement");
+    if (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({ video:true})
+         .then(stream => {
+            video.srcObject = stream;
+         })
+         .catch (function (error){
+            console.log("Something went wrong!");
+            console.log(error)
+         })
+
+
+    } else{
+        console.log("getUserMedia not supported!");
+    }
+
+</script>
+
+
 </html>
 
