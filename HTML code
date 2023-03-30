@@ -81,7 +81,12 @@
     <div>
     <a id="reverse" href='/Reverse'> Backward (s) </a>
     </div>
-
+    <div>
+    <!-- <a id="left" href='/Left'> Left (a) </a>    
+    </div>
+    <div>
+    <a id="right" href='/Right'> Right (d)</a>    -->
+    </div>
 </div>  
 
 
@@ -112,4 +117,3 @@
 
 
 </html>
-
