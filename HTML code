@@ -96,7 +96,7 @@
             width: 40px;
             background-color: white;
             transition: 0.4s;
-            top: 5px;
+            top: 4.5px;
             left: 5px;
         }
         input:checked + .slider{
