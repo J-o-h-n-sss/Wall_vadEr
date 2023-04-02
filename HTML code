@@ -59,30 +59,58 @@
            
             
         }
-        .button{
-           background-color: #d2d2d2;
-           width: 200px;
-           height: 100px;
-           border-radius: 200px;
-           cursor: pointer;
-           position: relative;
-        }
-        .button::before{
-            position: absolute;
-            content: '';
-            background-color: #fff;
-            width: 90px;
-            height: 90px;
-            border-radius: 200px;
-            margin: 5px;
-        }
-        input:checked + .button{
-            background-color: #20096d;
-        }
-        input:checked + .button::before{
-            transform: translateX(100px);
+        .toggle{
+            position: relative;
 
         }
+        .toggle input{
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+
+        }
+        .toggle .onoff{
+            color: white;
+            font-size: 1em;
+            text-align: left;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .slider {
+            position: relative;
+            display: block;
+            cursor: pointer;
+            background-color: #333;
+            transition: .4s;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        .slider::before{
+            content:'';
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            background-color: white;
+            transition: 0.4s;
+            top: 5px;
+            left: 5px;
+        }
+        input:checked + .slider{
+            background-color: crimson;
+            box-shadow: 0 0 12px crimson;
+        }
+
+        input:checked + .slider::before {
+            transform: translateX(50px);
+        }
+        
+
+        
+        
         </style>
         
   
@@ -111,24 +139,38 @@
     <div>
     <a id="right" href='/Right'> Right (d)</a>    -->
     </div>
-    <div class="container">
-        <input type="checkbox">
-        <label for="check" class="button"></label>
-    </div>
+    <label class="toggle">
+        <span class="onoff">OFF/ON</span>
+        <input type="checkbox"/>
+        <span class="slider round"></span>
+    </label>
     
-</div>  
+</div> 
+
+<!--ON/OFF TOGGLE CODE-->
+<!--<script>
+    const toggle= document.querySelector('.toggle input')
+
+    toggle.addEventListener('click', ()=> {
+        const onoff = toggle.parentNode.querySelector('.toggle .onoff')
+        onOff.textContent = toggle.checked ? 'ON':'OFF'
+    })
 
 
-    
 
-    
-    
+
+
+</script>
+-->
+
 </body>
 
+
+<!--WEBCAM CODE-->
 <script>
     let video = document.getElementById("videoElement");
     if (navigator.mediaDevices.getUserMedia) {
-        navigator.mediaDevices.getUserMedia({video:true})
+        navigator.mediaDevices.getUserMedia({video:false})
          .then(stream => {
             video.srcObject = stream;
          })
@@ -141,8 +183,8 @@
     } else{
         console.log("getUserMedia not supported!");
     }
-
 </script>
+
 
 
 </html>
