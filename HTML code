@@ -140,7 +140,7 @@
     <a id="right" href='/Right'> Right (d)</a>    -->
     </div>
     <label class="toggle">
-        <span class="onoff">OFF/ON</span>
+        <span id="onoff">OFF</span>
         <input type="checkbox"/>
         <span class="slider round"></span>
     </label>
@@ -148,43 +148,49 @@
 </div> 
 
 <!--ON/OFF TOGGLE CODE-->
-<!--<script>
+<script>
     const toggle= document.querySelector('.toggle input')
 
+    console.log("toggle is " + toggle)
     toggle.addEventListener('click', ()=> {
-        const onoff = toggle.parentNode.querySelector('.toggle .onoff')
+        const onOff = document.getElementById('onoff')
         onOff.textContent = toggle.checked ? 'ON':'OFF'
+        console.log("toggle is " + onOff, toggle.checked)
+        toggleVideo(toggle.checked)
+
     })
 
-
-
-
-
 </script>
--->
+
 
 </body>
 
 
+
+
 <!--WEBCAM CODE-->
 <script>
+
+function toggleVideo(on = true){
     let video = document.getElementById("videoElement");
-    if (navigator.mediaDevices.getUserMedia) {
-        navigator.mediaDevices.getUserMedia({video:false})
-         .then(stream => {
-            video.srcObject = stream;
-         })
-         .catch (function (error){
-            console.log("Something went wrong!");
-            console.log(error)
-         })
+    if (on) {
+        if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({video:true})
+            .then(stream => {
+                video.srcObject = stream;
+            })
+            .catch (function (error){
+                console.log("Something went wrong!");
+                console.log(error)
+            })
 
 
-    } else{
-        console.log("getUserMedia not supported!");
+        } else{
+            console.log("getUserMedia not supported!");
+        }
     }
+    else {
+        video.srcObject = null;
+    }
+}
 </script>
-
-
-
-</html>
