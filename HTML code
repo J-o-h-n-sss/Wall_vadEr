@@ -51,7 +51,16 @@
         #forward:hover{
             background-color:black;
         }
-       
+       #reverse {
+        background-color: red;
+        position: absolute;
+        top: 700px;
+       }
+       #reverse:hover{
+        background-color: black;
+       }
+
+
         .container{
             display: flex;
             align-items: center;
@@ -131,7 +140,7 @@
     <a id="forward" href='/Drive'> Forward (w) </a>
     </div>
     <div>
-    <!-- <a id="reverse" href='/Reverse'> Backward (s) </a> -->
+    <a id="reverse" href='/Reverse'> Backward (s) </a> 
     </div>
     <div>
     <!-- <a id="left" href='/Left'> Left (a) </a>    
