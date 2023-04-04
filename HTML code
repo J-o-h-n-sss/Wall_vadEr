@@ -59,6 +59,24 @@
        #reverse:hover{
         background-color: black;
        }
+       #left{
+        background-color: red;
+        position: relative;
+        top: 50px;
+        left: 10px;
+        
+       }
+       #left:hover{
+        background-color: black;
+       }
+       #right{
+        background-color: red;
+        position: relative;
+        right: 1px;
+       }
+       #right:hover{
+        background-color: black;
+       }
 
 
         .container{
@@ -70,6 +88,7 @@
         }
         .toggle{
             position: relative;
+            top: -350px;
 
         }
         .toggle input{
@@ -143,10 +162,10 @@
     <a id="reverse" href='/Reverse'> Backward (s) </a> 
     </div>
     <div>
-    <!-- <a id="left" href='/Left'> Left (a) </a>    
+    <a id="left" href='/Left'> Left (a) </a>    
     </div>
     <div>
-    <a id="right" href='/Right'> Right (d)</a>    -->
+    <a id="right" href='/Right'> Right (d)</a>
     </div>
     <label class="toggle">
         <span id="onoff">OFF</span>
