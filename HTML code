@@ -9,7 +9,7 @@
 
     <style>
         h1 {
-            font-family: sans-serif;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: whitesmoke;
             text-align: center;
 
@@ -69,10 +69,12 @@
        #left:hover{
         background-color: black;
        }
+
        #right{
         background-color: red;
-        position: relative;
-        right: 1px;
+        position: absolute;
+        right: 10px;
+        top: 400px;
        }
        #right:hover{
         background-color: black;
@@ -145,35 +147,56 @@
 </head>
 
 <body>
-    <h1>Wall Vader Control System</h1>
-<div>
-    <div id="container"> 
-        <video autoplay="true" id="videoElement">
+    <table border=1 width=100% height=100%>
+        <!--Title-->
+        <tr height=20%>
+            <td width=25%><td colspan=2 width=50% align='center'><h1>Wall Vader Control System</h1><td>
+        </tr>
 
 
-        </video>
+        <!--WebCam and Toggle-->
+        <tr height=30%>
+            <td><div>
+                <label class="toggle">
+                    <span id="onoff">OFF</span>
+                    <input type="checkbox"/>
+                    <span class="slider round"></span>
+                </label>   
+            </div><td colspan=2 align='center'><div id="container"> 
+                <video autoplay="true" id="videoElement">
+        
+        
+                </video>
+        
+            </div><td>
+        </tr>
 
-    </div>
+        <!--Forward Button-->
+        <tr height="10%">
+            <td width="25%"><td colspan=2 align='center'><div>
+                <a id="forward" href='/Drive'> Forward (w) </a>
+                </div><td>
+        </tr>
 
-    <div>
-    <a id="forward" href='/Drive'> Forward (w) </a>
-    </div>
-    <div>
-    <a id="reverse" href='/Reverse'> Backward (s) </a> 
-    </div>
-    <div>
-    <a id="left" href='/Left'> Left (a) </a>    
-    </div>
-    <div>
-    <a id="right" href='/Right'> Right (d)</a>
-    </div>
-    <label class="toggle">
-        <span id="onoff">OFF</span>
-        <input type="checkbox"/>
-        <span class="slider round"></span>
-    </label>
+        <!--Left and Right Button-->
+        <tr height="10%" align='center'>
+            <td><td><div>
+                <a id="left" href='/Left'> Left (a) </a>    
+                </div><td> <div>
+                    <a id="right" href='/Right'> Right (d)</a>
+                    </div><td></tr>
+
+        <!--Reverse Button-->                
+        <tr height="10%">
+            <td><td colspan=2 align='center'><div>
+                <a id="reverse" href='/Reverse'> Backward (s) </a> 
+                </div><td>
+        </tr>
+    </table>
+
+
     
-</div> 
+
 
 <!--ON/OFF TOGGLE CODE-->
 <script>
