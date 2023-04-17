@@ -6,6 +6,7 @@
 ### Speed ⚡: N/A
 ### Height : N/A
 ### Battery capacity 🔋: 7.8 volts
-### 
+### THE SPECS AND NEW FUNCTIONS WILL BE UPDATED IN THE FUTURE.
+#### To Be Continued...
 
 
