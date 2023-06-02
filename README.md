@@ -12,13 +12,18 @@
 #### - Our version of robot can be controled and drive around through the FPOV camera
 #### - It can be operated autonomously (using make.com, node-red)
 #### - In somecase, the robot can be driven to groceries store to buy snacks (remote control)
-#### ^Milestones ( what the group has so far):
+### ^Milestones ( what the group has so far):
 #### - A website set up
 #### - Code for the motors
 #### - Energy source (battery)
 #### - Robot's chassis assembled
-#### ^Materials: 
-#### 
+### ^Materials: 
+#### - 8x8 LED Dot Matrix ($...)
+#### - Motors 
+#### - Battery
+#### - Wheels 
+#### - Rasberry Pi pico ($20.59)
+
 
 
 
