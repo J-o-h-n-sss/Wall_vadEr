@@ -8,6 +8,7 @@
 ### Battery capacity 🔋: 7.8 volts
 ### THE SPECS AND NEW FUNCTIONS WILL BE UPDATED IN THE FUTURE.
 ### Proposal:
+#### - The robot was inspired from the street cleaning robot Wall-e from the movie in which was named after the robot. 
 #### - 
 
 
