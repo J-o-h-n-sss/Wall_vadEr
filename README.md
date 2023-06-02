@@ -9,6 +9,8 @@
 ### THE SPECS AND NEW FUNCTIONS WILL BE UPDATED IN THE FUTURE.
 ### Proposal:
 #### - The robot was inspired from the street cleaning robot Wall-e from the movie in which was named after the robot. 
+#### - Our version of robot can be controled and drive around throught the FPOV camera
+#### - It can be operated autonomously (using make.com, node-red)
 #### - 
 
 
