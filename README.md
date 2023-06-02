@@ -8,15 +8,15 @@
 ### Battery capacity 🔋: 7.8 volts
 ### THE SPECS AND NEW FUNCTIONS WILL BE UPDATED IN THE FUTURE.
 ### Proposal:
-#### - The robot was inspired from the street cleaning robot Wall-e from the movie in which was named after the robot. 
-#### - Our version of robot can be controled and drive around through the FPOV camera
-#### - It can be operated autonomously (using make.com, node-red)
-#### - In somecase, the robot can be driven to groceries store to buy snacks (remote control)
-### ^Milestones ( what the group has so far):
-#### - A website set up
-#### - Code for the motors
-#### - Energy source (battery)
-#### - Robot's chassis assembled
+#### So far, we have:
+#### - We have the chassis assembled
+#### - A working website with a camera embeded on the website 
+#### - Some sort of code for the motors
+### 3 weeks long project:
+#### Week 1:
+#### - 
+
+
 ### ^Materials: 
 #### - 8x8 LED Dot Matrix ($...)
 #### - Motors 
