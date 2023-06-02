@@ -8,7 +8,7 @@
 ### Battery capacity 🔋: 7.8 volts
 ### THE SPECS AND NEW FUNCTIONS WILL BE UPDATED IN THE FUTURE.
 ### Proposal:
-#### So far, we have:
+### So far, we have:
 #### - We have the chassis assembled
 #### - A working website with a camera embeded on the website 
 #### - Some sort of code for the motors
