@@ -15,13 +15,20 @@
 ### 3 weeks long project:
 #### Week 1:
 #### - Create code to initiate the robot from the website
-#### - Build the body for the robot using cardboard (this can be done at home)
+#### - Program the robot so that the driver can remotely control it
 #### - Properly wire up the robot
 #### - Code the LED Dot Matrix
 #### Week 2:
 #### - Design the head for the robot ( then add the LED matrix and the camera in)
+#### - Fully assemble the body and start assembling the head
+#### - Build the body for the robot using cardboard (this can be done at home)
+#### - 
+### Week 3:
+#### - Set up autonomation for the robot (using node-red)
+#### - Test run 
 #### - 
 
+## Finished product is due on Friday of the third week
 
 ### ^Materials: 
 #### - 8x8 LED Dot Matrix ($...)
