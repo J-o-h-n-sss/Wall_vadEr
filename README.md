@@ -18,6 +18,7 @@
 #### - Program the robot so that the driver can remotely control it
 #### - Properly wire up the robot
 #### - Code the LED Dot Matrix
+#### - 3d print the wheel adaptor
 #### Week 2:
 #### - Design the head for the robot ( then add the LED matrix and the camera in)
 #### - Fully assemble the body and start assembling the head
