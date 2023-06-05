@@ -22,11 +22,12 @@
 #### - Design the head for the robot ( then add the LED matrix and the camera in)
 #### - Fully assemble the body and start assembling the head
 #### - Build the body for the robot using cardboard (this can be done at home)
-#### - 
+#### - Adding the camera to the robot 
 ### Week 3:
+#### - Catch up 
 #### - Set up autonomation for the robot (using node-red)
 #### - Test run 
-#### - 
+#### - Organized the wires 
 
 ## Finished product is due on Friday of the third week
 
