@@ -141,6 +141,14 @@
         #onoff{
             color: red;
         }
+        
+        #stop{
+            background-color: red;
+        }
+        #stop:hover{
+            background-color: black;
+        }
+        
          
 
         
@@ -202,7 +210,7 @@
         </tr>
 
         <tr height="10%">
-            <td></td>
+            <td><td align='center' colspan=2><a id='stop' href='/Stop'> Stop (x) </a></td>
         </tr>
     </table>
 
